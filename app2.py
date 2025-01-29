@@ -17,7 +17,7 @@ def predict_churn(features):
 
 # Streamlit interface configuration
 st.set_page_config(
-    page_title="Customer Churn Prediction",
+    page_title="ChurnAI",
     page_icon="🔍",
     layout="centered",
 )
