@@ -81,7 +81,10 @@ def process_input_data():
     france = geo_fr[geography]
     ger = geo_ger[geography]
     spain = geo_sp[geography]
-    Balance_Salary_Ratio = balance / estimated_salary
+    if estimated_salary == 0:
+        Balance_Salary_Ratio = 0  # or handle it appropriately
+    else:
+        Balance_Salary_Ratio = balance / estimated_salary
 
     return [
         credit_score,
