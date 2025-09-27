@@ -29,7 +29,7 @@ st.markdown('<div class="subtitle">Predict the likelihood of a customer leaving 
 # --- 3. Banner Image ---
 # This will gracefully handle the case where the image is not found.
 try:
-    image = Image.open("streamlit_frontend\Blog-12.jpg")
+    image = Image.open("streamlit_frontend/Blog-12.jpg")
     st.image(image)
 except FileNotFoundError:
     st.warning("Banner image 'Blog-12.jpg' not found. Please place it in the 'streamlit_frontend' folder.")
