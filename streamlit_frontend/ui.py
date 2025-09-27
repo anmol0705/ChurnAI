@@ -75,7 +75,7 @@ if st.button("Predict Churn", type="primary"):
 
     try:
         # Send the request to the FastAPI backend
-        response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+        response = requests.post("https://anmol752005-churnai.hf.space/predict", json=payload)
         response.raise_for_status()  # Raise an exception for HTTP errors
 
         result = response.json()
